@@ -40,7 +40,7 @@ flowchart TB
 | **Postgres** | Users, documents, chunks (text + metadata), jobs, flashcards, logs |
 | **FAISS** | Vector index per document on disk (`backend/data/faiss/`) |
 | **MiniLM** | Local embeddings (no API key) |
-| **Grok (xAI)** | Topic map, flashcards, chat answers (needs `XAI_API_KEY`) |
+| **LLM (Groq or xAI)** | Topic map, flashcards, chat — needs `GROQ_API_KEY` (Groq) or `XAI_API_KEY` (xAI) |
 
 There is **no Redis** and **no separate worker**. Upload and generate jobs run in the API process after the HTTP response (`BackgroundTasks`).
 
@@ -79,7 +79,7 @@ Tables are created automatically when the API starts (`create_all()`).
 ```bash
 cd backend
 cp .env.example .env
-# Edit .env: DATABASE_URL, JWT_SECRET, XAI_API_KEY, XAI_MODEL
+# Edit .env: DATABASE_URL, JWT_SECRET, and LLM (Groq or xAI)
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
@@ -92,14 +92,21 @@ uvicorn app.main:app --reload
 
 Run **`uvicorn` from the `backend/` directory** so `.env` is loaded.
 
-**Grok env** (in `backend/.env` only):
+**Groq (matches console.groq.com + `gsk_` keys):**
 
 ```env
-XAI_API_KEY=your-key-from-console.x.ai
-XAI_MODEL=grok-2-1212
+LLM_PROVIDER=groq
+GROQ_API_KEY=gsk_...
+GROQ_MODEL=openai/gpt-oss-120b
 ```
 
-Use the model id shown in your [xAI console](https://console.x.ai/) if the default fails.
+**xAI Grok Cloud (console.x.ai + `xai-` keys):**
+
+```env
+LLM_PROVIDER=xai
+XAI_API_KEY=xai-...
+XAI_MODEL=grok-build-0.1
+```
 
 ### 3. Frontend
 
@@ -218,7 +225,7 @@ Deleting a document via API removes DB rows, upload file, and FAISS files.
 |---------|--------|
 | Health fails | Postgres up? `DATABASE_URL` correct? Use `postgresql+psycopg2://...` if driver errors. |
 | Upload stuck / job failed | API logs; file type PDF/DOCX; empty PDF text. |
-| Chat / generate errors | `XAI_API_KEY` and `XAI_MODEL` in `backend/.env`; restart uvicorn. Wrong var name (`GROK_API_KEY` is ignored — use `XAI_API_KEY`). |
+| Chat / generate errors | Groq: `GROQ_API_KEY` + `GROQ_MODEL` from [console.groq.com](https://console.groq.com). xAI: `XAI_API_KEY` + `XAI_MODEL`. Restart uvicorn after `.env` changes. |
 | Frontend can’t reach API | Backend on :8000; frontend dev server running (proxy). |
 | CORS errors | Backend allows `localhost:5173` in [`backend/app/main.py`](backend/app/main.py). |
 

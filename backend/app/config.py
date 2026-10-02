@@ -12,8 +12,12 @@ class Settings(BaseSettings):
     jwt_algorithm: str = "HS256"
     jwt_expire_minutes: int = 60 * 24 * 7
 
+    # LLM: Groq (console.groq.com) OR xAI Grok (console.x.ai) — not interchangeable
+    llm_provider: str = "auto"  # auto | groq | xai
+    groq_api_key: str = ""
+    groq_model: str = "openai/gpt-oss-120b"
     xai_api_key: str = ""
-    xai_model: str = "grok-2-1212"
+    xai_model: str = "grok-build-0.1"
     grok_timeout_seconds: int = 120
 
     embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2"

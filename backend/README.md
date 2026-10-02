@@ -19,4 +19,4 @@ Or from this folder: `docker compose up` (API + postgres only).
 
 API: `http://localhost:8000/docs`
 
-Set `XAI_API_KEY` for Grok-backed topic map, flashcards, and chat.
+Set **`GROQ_API_KEY`** (Groq) or **`XAI_API_KEY`** (xAI) for topic map, flashcards, and chat. See `.env.example`.
