@@ -1,6 +1,6 @@
 # Study RAG Backend
 
-FastAPI + Postgres + FAISS + Redis/RQ worker. Run all commands from this `backend/` directory.
+FastAPI + Postgres + FAISS. Background jobs (index, topic map, flashcards) run in-process via FastAPI `BackgroundTasks` — **no Redis or separate worker**.
 
 See `.env.example`.
 
@@ -11,12 +11,11 @@ cd backend   # from repo root
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env
-docker compose up -d postgres redis
+# start Postgres, set DATABASE_URL in .env
 uvicorn app.main:app --reload
-python -m app.worker.main
 ```
 
-Or from this folder: `docker compose up` (builds API + worker + postgres + redis).
+Or from this folder: `docker compose up` (API + postgres only).
 
 API: `http://localhost:8000/docs`
 

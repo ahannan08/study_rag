@@ -3,7 +3,12 @@ import uuid
 from sqlalchemy.orm import Session
 
 from app.models import Chunk, Document, Job, JobType
-from app.services.job_service import create_job, enqueue_job
+from app.services.job_service import create_job
+from app.worker.tasks import (
+    run_flashcards_task,
+    run_ingest_index_task,
+    run_topic_map_task,
+)
 
 
 def document_to_out(doc: Document, db: Session) -> dict:
@@ -24,18 +29,24 @@ def document_to_out(doc: Document, db: Session) -> dict:
 
 
 def start_ingest_job(db: Session, user_id: uuid.UUID, document_id: uuid.UUID) -> Job:
-    job = create_job(db, user_id, document_id, JobType.INGEST_INDEX)
-    enqueue_job(job, "app.worker.tasks.run_ingest_index_task", str(job.id), str(document_id))
-    return job
+    return create_job(db, user_id, document_id, JobType.INGEST_INDEX)
 
 
 def start_topic_map_job(db: Session, user_id: uuid.UUID, document_id: uuid.UUID) -> Job:
-    job = create_job(db, user_id, document_id, JobType.TOPIC_MAP)
-    enqueue_job(job, "app.worker.tasks.run_topic_map_task", str(job.id), str(document_id))
-    return job
+    return create_job(db, user_id, document_id, JobType.TOPIC_MAP)
 
 
 def start_flashcards_job(db: Session, user_id: uuid.UUID, document_id: uuid.UUID) -> Job:
-    job = create_job(db, user_id, document_id, JobType.FLASHCARDS)
-    enqueue_job(job, "app.worker.tasks.run_flashcards_task", str(job.id), str(document_id))
-    return job
+    return create_job(db, user_id, document_id, JobType.FLASHCARDS)
+
+
+def schedule_ingest(job_id: uuid.UUID, document_id: uuid.UUID) -> None:
+    run_ingest_index_task(str(job_id), str(document_id))
+
+
+def schedule_topic_map(job_id: uuid.UUID, document_id: uuid.UUID) -> None:
+    run_topic_map_task(str(job_id), str(document_id))
+
+
+def schedule_flashcards(job_id: uuid.UUID, document_id: uuid.UUID) -> None:
+    run_flashcards_task(str(job_id), str(document_id))

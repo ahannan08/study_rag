@@ -1,19 +1,9 @@
 import uuid
 from datetime import UTC, datetime
 
-from redis import Redis
-from rq import Queue
 from sqlalchemy.orm import Session
 
-from app.config import get_settings
 from app.models import Job, JobStatus, JobType
-
-settings = get_settings()
-
-
-def get_queue() -> Queue:
-    conn = Redis.from_url(settings.redis_url)
-    return Queue(connection=conn)
 
 
 def create_job(db: Session, user_id: uuid.UUID, document_id: uuid.UUID, job_type: JobType) -> Job:
@@ -27,11 +17,6 @@ def create_job(db: Session, user_id: uuid.UUID, document_id: uuid.UUID, job_type
     db.commit()
     db.refresh(job)
     return job
-
-
-def enqueue_job(job: Job, task_name: str, *args: str) -> None:
-    q = get_queue()
-    q.enqueue(task_name, *args, job_id=str(job.id))
 
 
 def update_job(db: Session, job_id: uuid.UUID, **fields) -> None:

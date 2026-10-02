@@ -1,6 +1,6 @@
 import uuid
 
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 
 from app.api.deps import get_current_user, get_owned_document
@@ -12,7 +12,7 @@ from app.schemas.flashcard import (
     FlashcardReviewIn,
     FlashcardReviewOut,
 )
-from app.services.document_service import start_flashcards_job
+from app.services.document_service import schedule_flashcards, start_flashcards_job
 from app.services.flashcard_service import due_flashcards, list_flashcards, review_flashcard
 
 router = APIRouter(tags=["flashcards"])
@@ -35,6 +35,7 @@ def get_flashcards(
 )
 def generate_flashcards(
     document_id: uuid.UUID,
+    background_tasks: BackgroundTasks,
     db: Session = Depends(get_db),
     user: User = Depends(get_current_user),
 ) -> FlashcardGenerateResponse:
@@ -42,6 +43,7 @@ def generate_flashcards(
     if not doc.indexed:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Document must be indexed first")
     job = start_flashcards_job(db, user.id, doc.id)
+    background_tasks.add_task(schedule_flashcards, job.id, doc.id)
     return FlashcardGenerateResponse(job_id=job.id)
 
 

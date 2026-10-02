@@ -1,6 +1,6 @@
 import uuid
 
-from fastapi import APIRouter, Depends, File, HTTPException, UploadFile, status
+from fastapi import APIRouter, BackgroundTasks, Depends, File, HTTPException, UploadFile, status
 from sqlalchemy.orm import Session
 
 from app.api.deps import get_current_user, get_owned_document
@@ -9,7 +9,7 @@ from app.db.session import get_db
 from app.infrastructure.storage.file_store import FileStore
 from app.models import Document, DocumentStatus, Job, User
 from app.schemas.document import DocumentDetailOut, DocumentOut, DocumentUploadResponse
-from app.services.document_service import document_to_out, start_ingest_job
+from app.services.document_service import document_to_out, schedule_ingest, start_ingest_job
 from app.services.ingestion.pipeline import delete_document_assets
 
 router = APIRouter(prefix="/documents", tags=["documents"])
@@ -17,6 +17,7 @@ router = APIRouter(prefix="/documents", tags=["documents"])
 
 @router.post("", response_model=DocumentUploadResponse, status_code=status.HTTP_202_ACCEPTED)
 async def upload_document(
+    background_tasks: BackgroundTasks,
     file: UploadFile = File(...),
     db: Session = Depends(get_db),
     user: User = Depends(get_current_user),
@@ -46,6 +47,7 @@ async def upload_document(
     db.refresh(doc)
 
     job = start_ingest_job(db, user.id, doc.id)
+    background_tasks.add_task(schedule_ingest, job.id, doc.id)
     return DocumentUploadResponse(document_id=doc.id, job_id=job.id)
 
 

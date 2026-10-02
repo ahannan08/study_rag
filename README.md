@@ -1,31 +1,23 @@
 # Study RAG
 
-Monorepo layout:
+Monorepo for a document-grounded study assistant (chat, topic map, flashcards, spaced review).
 
-- [`study-rag-spec.pdf`](study-rag-spec.pdf) — product specification
-- [`backend/`](backend/) — FastAPI API, worker, Postgres, FAISS, Redis
-- [`frontend/`](frontend/) — React + TypeScript UI (Vite)
+**Start here:** [**GETTING_STARTED.md**](GETTING_STARTED.md) — architecture, setup, user flow, and API overview for frontend + backend together.
 
-## Backend
+| Path | Purpose |
+|------|---------|
+| [`study-rag-spec.pdf`](study-rag-spec.pdf) | Product specification |
+| [`backend/`](backend/) | FastAPI, Postgres, FAISS, Grok |
+| [`frontend/`](frontend/) | React + TypeScript (Vite) |
 
-```bash
-cd backend
-cp .env.example .env
-docker compose up -d postgres redis
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-uvicorn app.main:app --reload
-python -m app.worker.main
-```
-
-## Frontend
+Quick start:
 
 ```bash
-cd frontend
-npm install
-npm run dev
+# Terminal 1 — backend (from backend/, with Postgres + .env configured)
+cd backend && source .venv/bin/activate && uvicorn app.main:app --reload
+
+# Terminal 2 — frontend
+cd frontend && npm run dev
 ```
 
-Open http://localhost:5173 — API requests proxy to http://127.0.0.1:8000.
-
-See [backend/README.md](backend/README.md) and [frontend/README.md](frontend/README.md).
+Open http://localhost:5173

@@ -1,13 +1,13 @@
 import uuid
 
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 
 from app.api.deps import get_current_user, get_owned_document
 from app.db.session import get_db
 from app.models import User
 from app.schemas.topic_map import TopicMapGenerateResponse, TopicMapOut
-from app.services.document_service import start_topic_map_job
+from app.services.document_service import schedule_topic_map, start_topic_map_job
 
 router = APIRouter(tags=["topic-map"])
 
@@ -31,6 +31,7 @@ def get_topic_map(
 )
 def generate_topic_map(
     document_id: uuid.UUID,
+    background_tasks: BackgroundTasks,
     db: Session = Depends(get_db),
     user: User = Depends(get_current_user),
 ) -> TopicMapGenerateResponse:
@@ -38,4 +39,5 @@ def generate_topic_map(
     if not doc.indexed:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Document must be indexed first")
     job = start_topic_map_job(db, user.id, doc.id)
+    background_tasks.add_task(schedule_topic_map, job.id, doc.id)
     return TopicMapGenerateResponse(job_id=job.id)
