@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Input } from "@/components/ui/Input";
 import { useAuth } from "@/context/AuthContext";
+import { isDemoMode } from "@/lib/demoMode";
 import { useState } from "react";
 
 export function LoginPage() {
@@ -12,7 +13,7 @@ export function LoginPage() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
-  if (user) return <Navigate to="/" replace />;
+  if (user) return <Navigate to="/app" replace />;
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -32,6 +33,15 @@ export function LoginPage() {
       <Card className="w-full max-w-md border-0 shadow-2xl">
         <h1 className="font-display text-2xl font-bold text-ink-950">Welcome back</h1>
         <p className="mt-1 text-sm text-ink-500">Sign in to your study library</p>
+        {isDemoMode && (
+          <p className="mt-3 rounded-lg bg-amber-50 px-3 py-2 text-xs text-amber-900">
+            Sign-in needs a running backend (local dev only). Use{" "}
+            <Link to="/demo" className="font-semibold underline">
+              View demo
+            </Link>{" "}
+            on the public site.
+          </p>
+        )}
         <form className="mt-6 space-y-4" onSubmit={(e) => void submit(e)}>
           <div>
             <label className="mb-1 block text-sm font-medium text-ink-700">Email</label>

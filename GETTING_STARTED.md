@@ -187,6 +187,10 @@ sequenceDiagram
 
 4. **Review** (nav) — Due flashcards across all documents; **Again** / **Got it** updates spaced repetition.
 
+### Portfolio demo (Vercel, no backend)
+
+You can deploy **only the frontend** with bundled sample data (exported from your local indexed documents). Set `VITE_DEMO_MODE=true` on Vercel; visitors get a public home page and read-only **Demo library** (topics, flashcards, sample chat). Upload and live API require running the stack locally — see `frontend/README.md` and `backend/scripts/export_demo_snapshot.py`.
+
 ---
 
 ## Backend API map (base `/api/v1`)

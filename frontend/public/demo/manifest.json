@@ -1,0 +1,24 @@
+{
+  "documents": [
+    {
+      "id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+      "title": "french_revolution_study_notes.pdf",
+      "status": "indexed",
+      "uploaded_at": "2026-10-02T17:24:12.380181+05:30",
+      "indexed": true,
+      "topic_map_ready": true,
+      "flashcards_ready": true,
+      "chunk_count": 10
+    },
+    {
+      "id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "title": "photosynthesis_study_notes.pdf",
+      "status": "indexed",
+      "uploaded_at": "2026-10-02T17:52:08.751021+05:30",
+      "indexed": true,
+      "topic_map_ready": true,
+      "flashcards_ready": true,
+      "chunk_count": 9
+    }
+  ]
+}

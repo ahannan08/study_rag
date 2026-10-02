@@ -68,7 +68,7 @@ export function DocumentPage() {
     return (
       <AppShell>
         <p className="text-red-600">{error ?? "Missing document"}</p>
-        <Link to="/" className="mt-4 inline-block text-accent">
+        <Link to="/app" className="mt-4 inline-block text-accent">
           Back to library
         </Link>
       </AppShell>
@@ -87,7 +87,7 @@ export function DocumentPage() {
 
   return (
     <AppShell>
-      <Link to="/" className="mb-4 inline-flex items-center gap-2 text-sm font-medium text-ink-500 hover:text-ink-800">
+      <Link to="/app" className="mb-4 inline-flex items-center gap-2 text-sm font-medium text-ink-500 hover:text-ink-800">
         <ArrowLeft className="h-4 w-4" />
         Library
       </Link>

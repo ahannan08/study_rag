@@ -5,8 +5,8 @@ import { cn } from "@/lib/cn";
 import { Button } from "@/components/ui/Button";
 
 const links = [
-  { to: "/", label: "Library", icon: BookOpen },
-  { to: "/review", label: "Review", icon: Layers },
+  { to: "/app", label: "Library", icon: BookOpen },
+  { to: "/app/review", label: "Review", icon: Layers },
 ];
 
 export function AppShell({ children }: { children: React.ReactNode }) {
@@ -30,7 +30,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
               <NavLink
                 key={to}
                 to={to}
-                end={to === "/"}
+                end={to === "/app"}
                 className={({ isActive }) =>
                   cn(
                     "flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-medium transition",
@@ -57,7 +57,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           <NavLink
             key={to}
             to={to}
-            end={to === "/"}
+            end={to === "/app"}
             className={({ isActive }) =>
               cn(
                 "flex flex-1 flex-col items-center gap-1 rounded-lg py-2 text-xs font-medium",
@@ -69,7 +69,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             {label}
           </NavLink>
         ))}
-        <NavLink to="/" className="flex flex-1 flex-col items-center gap-1 rounded-lg py-2 text-xs text-ink-500">
+        <NavLink to="/app" className="flex flex-1 flex-col items-center gap-1 rounded-lg py-2 text-xs text-ink-500">
           <MessageSquare className="h-5 w-5" />
           Chat
         </NavLink>

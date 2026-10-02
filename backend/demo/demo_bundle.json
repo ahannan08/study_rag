@@ -1,0 +1,600 @@
+{
+  "version": 1,
+  "exported_at": "2026-10-02T12:58:20.210078Z",
+  "documents": [
+    {
+      "snapshot": {
+        "document": {
+          "id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+          "title": "french_revolution_study_notes.pdf",
+          "status": "indexed",
+          "uploaded_at": "2026-10-02T17:24:12.380181+05:30",
+          "indexed": true,
+          "topic_map_ready": true,
+          "flashcards_ready": true,
+          "chunk_count": 10,
+          "topic_map": {
+            "topics": [
+              {
+                "title": "Definition and Scope of the French Revolution",
+                "summary": "The French Revolution (1789\u20111799) was a radical upheaval that ended absolute monarchy, abolished feudal privileges, and established citizenship and inalienable rights, spanning from the Estates\u2011General meeting to Napoleon\u2019s coup of 18\u202fBrumaire.",
+                "section_ref": "Chapter 1: Introduction and Causes"
+              },
+              {
+                "title": "The Ancien R\u00e9gime and Social Structure",
+                "summary": "Pre\u2011revolutionary France was organized into three Estates\u2014clergy, nobility, and the Third Estate (\u224898\u202f% of the population)\u2014with the first two enjoying tax exemptions while the Third bore the fiscal burden.",
+                "section_ref": "Chapter 1: Introduction and Causes"
+              },
+              {
+                "title": "Long\u2011Term and Immediate Causes",
+                "summary": "Financial crisis from war debts, Enlightenment ideas, economic hardship after poor harvests, and weak royal leadership combined to trigger revolutionary pressure.",
+                "section_ref": "Chapter 1: Introduction and Causes"
+              },
+              {
+                "title": "The Estates\u2011General and the Birth of the National Assembly",
+                "summary": "Louis XVI convened the Estates\u2011General in May 1789; a dispute over voting led the Third Estate to proclaim itself the National Assembly on 17\u202fJune 1789.",
+                "section_ref": "Chapter 2: The Outbreak of Revolution, 1789"
+              },
+              {
+                "title": "The Tennis Court Oath",
+                "summary": "Locked out of their meeting hall, deputies swore on 20\u202fJune 1789 at a tennis court to remain united until France had a constitution.",
+                "section_ref": "Chapter 2: The Outbreak of Revolution, 1789"
+              },
+              {
+                "title": "The Storming of the Bastille and the Great Fear",
+                "summary": "On 14\u202fJuly 1789 Parisians stormed the Bastille, a symbol of royal tyranny, while rural peasants reacted to rumors of aristocratic plots in the Great Fear.",
+                "section_ref": "Chapter 2: The Outbreak of Revolution, 1789"
+              },
+              {
+                "title": "The Constitutional Monarchy (1789\u20111792)",
+                "summary": "The National Assembly introduced reforms\u2014departmental reorganization, the Civil Constitution of the Clergy, and the 1791 Constitution\u2014creating a limited monarchy that collapsed after the 1792 war defeats and the Tuileries storming.",
+                "section_ref": "Chapter 3: The Constitutional Monarchy, 1789-1792"
+              },
+              {
+                "title": "The Republic and the Reign of Terror (1792\u20111794)",
+                "summary": "After abolishing the monarchy, the National Convention executed Louis XVI, created the Committee of Public Safety, and instituted the Reign of Terror, which claimed roughly 16\u201117\u202f000 lives.",
+                "section_ref": "Chapter 4: The Republic and the Terror, 1792-1794"
+              },
+              {
+                "title": "The Thermidorian Reaction and the Directory (1794\u20111799)",
+                "summary": "Robespierre\u2019s fall on 27\u202fJuly 1794 ushered in a moderate Thermidorian regime, followed by the Directory\u2014a corrupt, financially unstable government that lasted until Napoleon\u2019s 1799 coup.",
+                "section_ref": "Chapter 5: Thermidor, the Directory, and Legacy"
+              },
+              {
+                "title": "Legacy of the French Revolution",
+                "summary": "The Revolution spread ideas of legal equality, national citizenship, secular governance, and constitutionalism, while also demonstrating how revolutions can devolve into violence and authoritarianism.",
+                "section_ref": "Chapter 5: Thermidor, the Directory, and Legacy"
+              }
+            ]
+          },
+          "topic_map_at": "2026-10-02T17:35:50.145633+05:30"
+        },
+        "flashcards": [
+          {
+            "id": "0a34a6c1-8221-421b-902d-a4e1667b4ce6",
+            "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+            "question": "Name two cultural or social reforms introduced by the Republic.",
+            "answer": "The Republican Calendar (1793) and the metric system; also a campaign of de\u2011Christianization and the 1794 abolition of slavery in French colonies.",
+            "section_tag": "Cultural and Social Changes",
+            "next_review_at": "2026-10-02T17:36:03.522955+05:30"
+          },
+          {
+            "id": "9ee15fce-a0e0-4492-ad40-8f5ed629b6c8",
+            "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+            "question": "What are the start and end dates commonly used to define the French Revolution?",
+            "answer": "It is usually dated from the meeting of the Estates\u2011General on 5\u202fMay\u202f1789 to Napoleon\u2019s coup of 18\u202fBrumaire (9\u202fNovember\u202f1799).",
+            "section_tag": "Definition and Scope of the French Revolution",
+            "next_review_at": "2026-10-03T17:51:30.739723+05:30"
+          },
+          {
+            "id": "d9dbbefd-f5a4-4f99-a272-db99bb6a9cee",
+            "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+            "question": "On what date was Louis\u202fXVI executed, and what impact did his execution have internationally?",
+            "answer": "He was executed on 21\u202fJanuary\u202f1793; the execution alarmed European monarchies and intensified the wars against France.",
+            "section_tag": "Execution of the King",
+            "next_review_at": "2026-10-02T17:36:03.522955+05:30"
+          },
+          {
+            "id": "1739d2f6-0c8a-4346-a079-78a1bed391b7",
+            "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+            "question": "What was the outcome of the Flight to Varennes in June\u202f1791 for the monarchy?",
+            "answer": "The royal family\u2019s failed escape damaged trust in Louis\u202fXVI and weakened the monarchy\u2019s legitimacy.",
+            "section_tag": "Flight to Varennes and the Constitution of 1791",
+            "next_review_at": "2026-10-02T17:36:03.522955+05:30"
+          },
+          {
+            "id": "6c9b864e-037c-4ca5-8ed8-77fc30f8c009",
+            "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+            "question": "What political system was created by the Constitution of 1791?",
+            "answer": "A constitutional monarchy with a Legislative Assembly and a king who retained a suspensive veto; voting was limited to \u2018active citizens\u2019 who paid a minimum tax.",
+            "section_tag": "Flight to Varennes and the Constitution of 1791",
+            "next_review_at": "2026-10-02T17:36:03.522955+05:30"
+          },
+          {
+            "id": "eaa290ca-e0e4-4877-833b-718e17c37604",
+            "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+            "question": "List three lasting legacies of the French Revolution.",
+            "answer": "Ideas of legal equality before the law, national citizenship, secular government, and the spread of written constitutions worldwide.",
+            "section_tag": "Legacy of the French Revolution",
+            "next_review_at": "2026-10-02T17:36:03.522955+05:30"
+          },
+          {
+            "id": "f3a1bbd7-3f6a-480c-b301-91e49411d852",
+            "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+            "question": "Name two financial causes that contributed to the French Revolution.",
+            "answer": "Heavy state debt from supporting the American Revolution and chronic fiscal deficits that required half of the royal budget for debt service.",
+            "section_tag": "Long\u2011Term and Immediate Causes",
+            "next_review_at": "2026-10-02T17:36:03.522955+05:30"
+          },
+          {
+            "id": "d71d4549-0a4d-4bd5-8741-67cd22b0b0cd",
+            "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+            "question": "Which Enlightenment thinkers promoted ideas that influenced the Revolution?",
+            "answer": "Voltaire, Montesquieu, and Rousseau.",
+            "section_tag": "Long\u2011Term and Immediate Causes",
+            "next_review_at": "2026-10-02T17:36:03.522955+05:30"
+          },
+          {
+            "id": "df781dd8-b1f2-46a4-aabc-de2997acb52d",
+            "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+            "question": "What were the three Estates of the Ancien R\u00e9gime and which estate comprised about 98\u202f% of the population?",
+            "answer": "First Estate \u2013 clergy; Second Estate \u2013 nobility; Third Estate \u2013 everyone else (peasants, merchants, etc.), which made up roughly 98\u202f% of the population.",
+            "section_tag": "The Ancien R\u00e9gime and Social Structure",
+            "next_review_at": "2026-10-02T17:36:03.522955+05:30"
+          },
+          {
+            "id": "60543142-f503-47b4-bfeb-e82d0d15c9d1",
+            "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+            "question": "What was the Committee of Public Safety and who dominated it?",
+            "answer": "Created in April\u202f1793 to protect the Republic; it was dominated by Maximilien Robespierre and the Jacobins.",
+            "section_tag": "The Committee of Public Safety and the Reign of Terror",
+            "next_review_at": "2026-10-02T17:36:03.522955+05:30"
+          },
+          {
+            "id": "22e1eca4-c54e-4fef-81a3-133d5e7e8896",
+            "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+            "question": "Approximately how many people were officially sentenced to death during the Reign of Terror?",
+            "answer": "Historians estimate about 16,000\u201117,000 official death sentences, with many more dying in prisons or in the Vend\u00e9e.",
+            "section_tag": "The Committee of Public Safety and the Reign of Terror",
+            "next_review_at": "2026-10-02T17:36:03.522955+05:30"
+          },
+          {
+            "id": "313f3c18-bf60-452c-9e26-0cbabae1a80f",
+            "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+            "question": "When did Napoleon Bonaparte seize power and what government did he establish?",
+            "answer": "On 9\u202fNovember\u202f1799 (18\u202fBrumaire), he led a coup that overthrew the Directory and created the Consulate.",
+            "section_tag": "The Rise of Napoleon",
+            "next_review_at": "2026-10-02T17:36:03.522955+05:30"
+          },
+          {
+            "id": "ffb16037-3682-4628-b882-5aac1b23ae08",
+            "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+            "question": "What event on 14\u202fJuly\u202f1789 is celebrated as France\u2019s national day?",
+            "answer": "The storming of the Bastille.",
+            "section_tag": "The Storming of the Bastille and the Great Fear",
+            "next_review_at": "2026-10-02T17:36:03.522955+05:30"
+          },
+          {
+            "id": "548c128a-4e99-4be5-b1e3-90078d566df4",
+            "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+            "question": "When was the Declaration of the Rights of Man and of the Citizen adopted and what core rights did it proclaim?",
+            "answer": "Adopted on 26\u202fAugust\u202f1789; it proclaimed liberty, property, security, resistance to oppression, and that sovereignty resides in the nation.",
+            "section_tag": "The Storming of the Bastille and the Great Fear",
+            "next_review_at": "2026-10-02T17:36:03.522955+05:30"
+          },
+          {
+            "id": "63dd150b-d992-444a-96fc-f5f3ed74f64c",
+            "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+            "question": "What was the significance of the August\u202f4,\u202f1789 decrees for the feudal system?",
+            "answer": "They abolished feudal privileges and the tithe, effectively ending the legal framework of feudalism in France.",
+            "section_tag": "The Storming of the Bastille and the Great Fear",
+            "next_review_at": "2026-10-02T17:36:03.522955+05:30"
+          },
+          {
+            "id": "637868ae-1be7-4ee3-9f94-7fa33e96db03",
+            "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+            "question": "What did the August\u202f4,\u202f1789 decrees accomplish?",
+            "answer": "They abolished feudal privileges and the tithe, ending the legal basis of the feudal system.",
+            "section_tag": "The Storming of the Bastille and the Great Fear",
+            "next_review_at": "2026-10-02T17:36:03.522955+05:30"
+          },
+          {
+            "id": "ffdf6f25-6c03-4f67-a06d-17544d9081ec",
+            "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+            "question": "What was the significance of the Tennis Court Oath on 20\u202fJune\u202f1789?",
+            "answer": "Deputies pledged not to disband until France had a written constitution, marking a unified revolutionary commitment.",
+            "section_tag": "The Tennis Court Oath",
+            "next_review_at": "2026-10-02T17:36:03.522955+05:30"
+          },
+          {
+            "id": "69e9d4bd-3dd0-42ee-914e-7d5f7b82bee9",
+            "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+            "question": "What event on 27\u202fJuly\u202f1794 (9\u202fThermidor Year\u202fII) marked the end of the Terror?",
+            "answer": "The Thermidorian Reaction: Robespierre was arrested and guillotined the next day, ending the Terror.",
+            "section_tag": "The Thermidorian Reaction",
+            "next_review_at": "2026-10-02T17:36:03.522955+05:30"
+          },
+          {
+            "id": "4af321a7-29f3-4762-be89-c6742b24cea0",
+            "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+            "question": "What were the main weaknesses of the Directory (1795\u20111799)?",
+            "answer": "Corruption, financial instability, and heavy reliance on the army.",
+            "section_tag": "The Thermidorian Reaction and the Directory",
+            "next_review_at": "2026-10-02T17:36:03.522955+05:30"
+          },
+          {
+            "id": "ebd31f3d-0421-4d93-91fc-51c18a1e9934",
+            "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+            "question": "When was the monarchy formally abolished and the First French Republic proclaimed?",
+            "answer": "The monarchy was abolished and the Republic proclaimed on 21\u201122\u202fSeptember\u202f1792 by the National Convention.",
+            "section_tag": "War and the Fall of the Monarchy",
+            "next_review_at": "2026-10-02T17:36:03.522955+05:30"
+          },
+          {
+            "id": "86ba15ca-7015-4ef2-9474-5d4147537894",
+            "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+            "question": "Which two major wars began during the Revolutionary period and in what years?",
+            "answer": "The French Revolutionary Wars began with France declaring war on Austria in April\u202f1792; later, the War in the Vend\u00e9e (a civil war) erupted in 1793.",
+            "section_tag": "War and the Fall of the Monarchy",
+            "next_review_at": "2026-10-02T17:36:03.522955+05:30"
+          },
+          {
+            "id": "22f0bf93-d6cc-4dea-a263-b1c8d5d68fbc",
+            "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+            "question": "Which event on 10\u202fAugust\u202f1792 led to the suspension of the king?",
+            "answer": "Crowds, including sans\u2011culottes, stormed the Tuileries Palace, forcing the suspension of Louis\u202fXVI.",
+            "section_tag": "War and the Fall of the Monarchy",
+            "next_review_at": "2026-10-02T17:36:03.522955+05:30"
+          }
+        ],
+        "progress": {
+          "document_id": "50518de2-d1b8-4cd3-af18-c713b2ce1ec2",
+          "sections": [
+            {
+              "section_tag": "General",
+              "question_count": 1,
+              "review_count": 0,
+              "error_rate": null
+            },
+            {
+              "section_tag": "Definition and Scope of the French Revolution",
+              "question_count": 0,
+              "review_count": 1,
+              "error_rate": 0.0
+            }
+          ],
+          "total_questions": 1,
+          "total_reviews": 1
+        },
+        "weak_points": {
+          "weak_points": []
+        },
+        "chat_samples": [
+          {
+            "question": "hey, can u tell me about chilean revolution?",
+            "answer": "Not covered in this document.",
+            "coverage_label": "not_in_document",
+            "citations": []
+          }
+        ]
+      }
+    },
+    {
+      "snapshot": {
+        "document": {
+          "id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+          "title": "photosynthesis_study_notes.pdf",
+          "status": "indexed",
+          "uploaded_at": "2026-10-02T17:52:08.751021+05:30",
+          "indexed": true,
+          "topic_map_ready": true,
+          "flashcards_ready": true,
+          "chunk_count": 9,
+          "topic_map": {
+            "topics": [
+              {
+                "title": "Definition and Overall Equation of Photosynthesis",
+                "summary": "Photosynthesis converts light energy into chemical energy, producing glucose and oxygen from carbon dioxide and water. The balanced equation is 6\u202fCO\u2082\u202f+\u202f6\u202fH\u2082O\u202f+\u202flight \u2192 C\u2086H\u2081\u2082O\u2086\u202f+\u202f6\u202fO\u2082.",
+                "section_ref": "1.1 Definition and Overall Equation"
+              },
+              {
+                "title": "Historical Milestones",
+                "summary": "Key discoveries include Ingenhousz\u2019s 1779 observation of light\u2011dependent oxygen release, van Niel\u2019s 1930s insight that water supplies the oxygen, and Calvin\u2019s 1950s\u201160s work tracing carbon fixation with \u00b9\u2074C, earning a Nobel Prize.",
+                "section_ref": "1.2 Historical Background"
+              },
+              {
+                "title": "Biological Importance of Photosynthesis",
+                "summary": "It is the primary source of organic carbon and atmospheric O\u2082, forming the base of food webs and generating the fossil fuels that power modern society.",
+                "section_ref": "1.3 Importance"
+              },
+              {
+                "title": "Chloroplast Structure",
+                "summary": "Chloroplasts contain thylakoids (site of light reactions), stacked grana, the surrounding stroma (site of the Calvin cycle), and are abundant in mesophyll cells.",
+                "section_ref": "2.1 The Chloroplast"
+              },
+              {
+                "title": "Photosynthetic Pigments",
+                "summary": "Chlorophyll\u202fa absorbs blue\u2011violet and red light, chlorophyll\u202fb broadens the spectrum, and carotenoids capture blue\u2011green light while protecting the photosystems from excess light.",
+                "section_ref": "2.2 Photosynthetic Pigments"
+              },
+              {
+                "title": "Photosystems I and II",
+                "summary": "Each photosystem comprises an antenna complex and a reaction centre (P680 for PSII, P700 for PSI) that harvest photons and initiate electron transfer.",
+                "section_ref": "2.3 Photosystems"
+              },
+              {
+                "title": "Light\u2011Dependent Reactions (Non\u2011Cyclic Electron Flow)",
+                "summary": "Water is split, electrons travel from PSII to PSI via the electron transport chain, generating a proton gradient that drives ATP synthesis and producing NADPH.",
+                "section_ref": "3.2 Non\u2011Cyclic Electron Flow (the Z\u2011scheme)"
+              },
+              {
+                "title": "Cyclic Electron Flow",
+                "summary": "Electrons from PSI cycle back to the cytochrome complex, yielding extra ATP without producing NADPH or O\u2082, helping balance the ATP/NADPH ratio needed for carbon fixation.",
+                "section_ref": "3.4 Cyclic Electron Flow"
+              },
+              {
+                "title": "The Calvin Cycle (Light\u2011Independent Reactions)",
+                "summary": "In the stroma, RuBisCO fixes CO\u2082 into 3\u2011PGA, which is reduced to G3P using ATP and NADPH, and then regenerated to RuBP; six turns produce one glucose molecule.",
+                "section_ref": "4.1 Overview"
+              },
+              {
+                "title": "Photorespiration and C\u2084/CAM Adaptations",
+                "summary": "When RuBisCO binds O\u2082, photorespiration wastes energy; C\u2084 plants spatially separate CO\u2082 fixation, while CAM plants temporally separate it, both reducing photorespiratory loss.",
+                "section_ref": "5.1 Photorespiration and C4/CAM Plants"
+              },
+              {
+                "title": "Limiting Factors of Photosynthetic Rate",
+                "summary": "Light intensity, CO\u2082 concentration, temperature, and water availability each can become the limiting factor, with enzyme\u2011controlled steps being temperature\u2011sensitive.",
+                "section_ref": "5.2 Limiting Factors"
+              },
+              {
+                "title": "Key Facts and Summary",
+                "summary": "Eight concise facts recap the overall equation, oxygen source, compartmentalization of reactions, photosystem wavelengths, chemiosmotic ATP synthesis, RuBisCO\u2019s abundance, energy requirements for glucose, and Calvin\u2019s Nobel\u2011winning work.",
+                "section_ref": "6.1 Eight Key Facts"
+              }
+            ]
+          },
+          "topic_map_at": "2026-10-02T17:52:16.047564+05:30"
+        },
+        "flashcards": [
+          {
+            "id": "aba4def6-d2bd-4fc4-8bea-cbf13837c5d8",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "Why is photosynthesis considered the primary source of organic carbon on Earth?",
+            "answer": "Because it converts inorganic CO\u2082 into organic carbohydrates that form the base of most food webs.",
+            "section_tag": "Biological Importance of Photosynthesis",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "547ce6eb-026b-4d92-a4b9-e6254b40cfcb",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "Name the four main structural components of a chloroplast and their primary functions.",
+            "answer": "Thylakoids (site of light\u2011dependent reactions), Grana (stacks of thylakoids), Stroma (site of the Calvin cycle), and Stomata (pores that regulate gas exchange).",
+            "section_tag": "Chloroplast Structure",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "b89b3063-8603-45aa-9413-b1ff14cf841f",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "What is the purpose of cyclic electron flow and how does it differ from non\u2011cyclic flow?",
+            "answer": "Cyclic electron flow recycles electrons from PSI back to the cytochrome complex, producing extra ATP without generating NADPH or O\u2082, helping balance the ATP/NADPH ratio needed for the Calvin cycle.",
+            "section_tag": "Cyclic Electron Flow",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "d7333bac-e85b-47b2-ac39-aa59e5ba305e",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "What is the overall balanced chemical equation for photosynthesis?",
+            "answer": "6 CO\u2082 + 6 H\u2082O + light energy \u2192 C\u2086H\u2081\u2082O\u2086 + 6 O\u2082",
+            "section_tag": "Definition and Overall Equation of Photosynthesis",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "47d56908-98c1-47dc-8d13-cbfefb6e2537",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "Why is the photosynthetic reaction considered endergonic?",
+            "answer": "Because it requires an input of energy (sunlight) to convert CO\u2082 and H\u2082O into glucose and O\u2082.",
+            "section_tag": "Definition and Overall Equation of Photosynthesis",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "d80056d7-4b43-4386-97da-07a9b1c510a5",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "Who first demonstrated that plants release oxygen only in the presence of light, and in what year?",
+            "answer": "Jan Ingenhousz in 1779.",
+            "section_tag": "Historical Milestones",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "bcc0824c-0e50-4003-b0b2-67bb83a2788d",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "Which scientist showed that the oxygen released during photosynthesis comes from water, not CO\u2082?",
+            "answer": "Cornelis van Niel in the 1930s (later confirmed with \u00b9\u2078O isotope labeling).",
+            "section_tag": "Historical Milestones",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "bb7e758f-2d92-4c40-853c-638fe7d6f3b4",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "What technique did Melvin Calvin and his colleagues use to map the carbon fixation pathway?",
+            "answer": "Radioactive \u00b9\u2074C tracing of carbon atoms.",
+            "section_tag": "Historical Milestones",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "e866f178-baab-4324-8419-dd80d73597dc",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "For what achievement did Melvin Calvin receive the Nobel Prize in Chemistry in 1961?",
+            "answer": "For mapping the carbon fixation pathway of photosynthesis using radioactive \u00b9\u2074C.",
+            "section_tag": "Key Facts and Summary",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "b4ed588b-000e-4ce0-92e4-51de564da967",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "State three of the eight key facts summarized in the study notes.",
+            "answer": "1) The overall equation is 6CO\u2082 + 6H\u2082O + light \u2192 C\u2086H\u2081\u2082O\u2086 + 6O\u2082. 2) Oxygen released comes from water, not CO\u2082. 3) Light\u2011dependent reactions occur in thylakoid membranes, while the Calvin cycle occurs in the stroma.",
+            "section_tag": "Key Facts and Summary",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "29da3e35-a664-4486-b07b-030ba7f216d1",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "Which enzyme is considered the most abundant protein on Earth?",
+            "answer": "RuBisCO.",
+            "section_tag": "Key Facts and Summary",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "0ce9c33d-19a8-4518-98d2-9d4ae5f20c4a",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "How is ATP generated during the light\u2011dependent reactions?",
+            "answer": "Proton pumping creates a gradient across the thylakoid membrane; protons flow back through ATP synthase, driving the phosphorylation of ADP to ATP (photophosphorylation).",
+            "section_tag": "Light\u2011Dependent Reactions (Non\u2011Cyclic Electron Flow)",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "f5dbcac1-fc3e-4dca-a960-dcb0a393d1fb",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "Outline the main steps of non\u2011cyclic (Z\u2011scheme) electron flow in the light\u2011dependent reactions.",
+            "answer": "1) Light excites PSII (P680) \u2192 electron ejection. 2) Water is split (photolysis) to replace electrons, releasing O\u2082, H\u207a, and e\u207b. 3) Electrons travel through plastoquinone, cytochrome b\u2086f, and plastocyanin, pumping H\u207a into the lumen. 4) Light excites PSI (P700); electrons pass to ferredoxin and then NADP\u207a reductase to form NADPH.",
+            "section_tag": "Light\u2011Dependent Reactions (Non\u2011Cyclic Electron Flow)",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "ac04f76c-ba84-41e1-a711-97596d2c0884",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "Why are enzyme\u2011controlled steps of photosynthesis particularly sensitive to temperature?",
+            "answer": "Because high temperatures can denature the enzymes, reducing their catalytic efficiency.",
+            "section_tag": "Limiting Factors of Photosynthetic Rate",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "7f95d069-7fca-4f3b-be68-b6a4fb1ee0a8",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "According to Blackman's principle of limiting factors, what determines the rate of photosynthesis?",
+            "answer": "The rate is limited by whichever factor (light intensity, CO\u2082 concentration, temperature, or water availability) is in shortest supply.",
+            "section_tag": "Limiting Factors of Photosynthetic Rate",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "2e9905f1-c83e-4569-86ad-5074a76a74b0",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "How do C\u2084 plants minimize photorespiration?",
+            "answer": "They first fix CO\u2082 into a four\u2011carbon compound in mesophyll cells using PEP carboxylase, then transport it to bundle\u2011sheath cells where CO\u2082 is released for the Calvin cycle, keeping CO\u2082 concentration high around RuBisCO.",
+            "section_tag": "Photorespiration and C4/CAM Adaptations",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "dbbf9550-5a18-4d94-98cf-db224afde7f6",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "Describe the CAM photosynthetic strategy.",
+            "answer": "CAM plants open stomata at night to fix CO\u2082 into organic acids, store them, and then release CO\u2082 for the Calvin cycle during the day while stomata are closed, reducing water loss.",
+            "section_tag": "Photorespiration and C4/CAM Adaptations",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "9fdd9e1a-b6ca-4bc8-9077-e90b9f9d1b41",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "What is photorespiration and under what conditions does it become more prevalent?",
+            "answer": "Photorespiration occurs when RuBisCO binds O\u2082 instead of CO\u2082, leading to a wasteful pathway; it is more common in hot, dry conditions when stomata close and O\u2082 concentration inside the leaf rises.",
+            "section_tag": "Photorespiration and C4/CAM Adaptations",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "09493d6b-cb4a-4329-bcd4-19e171424f7e",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "What role do carotenoids play in photosynthesis?",
+            "answer": "They absorb blue\u2011green light and protect the photosystems from photodamage caused by excess light.",
+            "section_tag": "Photosynthetic Pigments",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "fabeef14-c00d-4f40-b9fd-a77a7af3c8b5",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "Which pigment is the primary light\u2011absorbing molecule in photosynthesis and what wavelengths does it absorb best?",
+            "answer": "Chlorophyll a; it absorbs mainly blue\u2011violet (~430\u202fnm) and red (~662\u202fnm) light.",
+            "section_tag": "Photosynthetic Pigments",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "10d40a69-51d9-4810-901b-504b8fad3acf",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "What are the names of the reaction centres of Photosystem II and Photosystem I, and why are they named that way?",
+            "answer": "P680 for PSII and P700 for PSI; the numbers refer to the wavelength (in nm) at which each centre absorbs light most efficiently.",
+            "section_tag": "Photosystems I and II",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "8daf7f8e-5df3-48ad-9486-3c9a3320c00e",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "List the three phases of the Calvin cycle in order.",
+            "answer": "1) Carbon fixation, 2) Reduction, 3) Regeneration of RuBP.",
+            "section_tag": "The Calvin Cycle (Light\u2011Independent Reactions)",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "f460d938-491a-4660-a1df-265fc3ba9bf2",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "What enzyme catalyzes the first step of carbon fixation, and what substrate does it act on?",
+            "answer": "RuBisCO catalyzes the attachment of CO\u2082 to ribulose\u20111,5\u2011bisphosphate (RuBP).",
+            "section_tag": "The Calvin Cycle (Light\u2011Independent Reactions)",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "089e82fd-fee2-4573-8d7c-01b24a1a6a36",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "In which cellular compartment does the Calvin cycle occur?",
+            "answer": "In the stroma of the chloroplast.",
+            "section_tag": "The Calvin Cycle (Light\u2011Independent Reactions)",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          },
+          {
+            "id": "5222509b-38ca-4305-a5a3-f018a935cfa3",
+            "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+            "question": "How many ATP and NADPH molecules are required to produce one molecule of glucose?",
+            "answer": "18 ATP and 12 NADPH (six turns of the cycle, each turn using 3 ATP and 2 NADPH).",
+            "section_tag": "The Calvin Cycle (Light\u2011Independent Reactions)",
+            "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+          }
+        ],
+        "progress": {
+          "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+          "sections": [
+            {
+              "section_tag": "Document",
+              "question_count": 1,
+              "review_count": 0,
+              "error_rate": null
+            },
+            {
+              "section_tag": "General",
+              "question_count": 1,
+              "review_count": 0,
+              "error_rate": null
+            }
+          ],
+          "total_questions": 2,
+          "total_reviews": 0
+        },
+        "weak_points": {
+          "weak_points": []
+        },
+        "chat_samples": [
+          {
+            "question": "ok, when do you think was the first time photsynthesis was done?",
+            "answer": "Not covered in this document.",
+            "coverage_label": "not_in_document",
+            "citations": []
+          },
+          {
+            "question": "can photosynthesis happen in deserts?",
+            "answer": "Yes. Photosynthesis can occur in desert environments, especially in plants that use the CAM (Crassulacean Acid Metabolism) pathway. CAM plants such as cacti open their stomata at night to take up CO\u2082 and store it, then run the Calvin cycle during the day, allowing them to photosynthesize while minimizing water loss in hot, dry conditions. The ability of photosynthesis to proceed depends on factors like water availability, which can be limiting in deserts, but CAM adaptations enable photosynthesis to still take place.",
+            "coverage_label": "partially_covered",
+            "citations": []
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,6 +1,10 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { AuthProvider } from "@/context/AuthContext";
+import { isDemoMode } from "@/lib/demoMode";
+import { DemoDocumentPage } from "@/pages/DemoDocumentPage";
+import { DemoLibraryPage } from "@/pages/DemoLibraryPage";
 import { DocumentPage } from "@/pages/DocumentPage";
+import { HomePage } from "@/pages/HomePage";
 import { LibraryPage } from "@/pages/LibraryPage";
 import { LoginPage } from "@/pages/LoginPage";
 import { RegisterPage } from "@/pages/RegisterPage";
@@ -12,14 +16,23 @@ export default function App() {
     <AuthProvider>
       <BrowserRouter>
         <Routes>
+          {isDemoMode ? (
+            <>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/demo" element={<DemoLibraryPage />} />
+              <Route path="/demo/documents/:documentId" element={<DemoDocumentPage />} />
+            </>
+          ) : (
+            <Route path="/" element={<Navigate to="/app" replace />} />
+          )}
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route element={<ProtectedRoute />}>
-            <Route path="/" element={<LibraryPage />} />
-            <Route path="/documents/:documentId" element={<DocumentPage />} />
-            <Route path="/review" element={<ReviewPage />} />
+            <Route path="/app" element={<LibraryPage />} />
+            <Route path="/app/documents/:documentId" element={<DocumentPage />} />
+            <Route path="/app/review" element={<ReviewPage />} />
           </Route>
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<Navigate to={isDemoMode ? "/" : "/app"} replace />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>

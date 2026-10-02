@@ -1,0 +1,315 @@
+{
+  "document": {
+    "id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+    "title": "photosynthesis_study_notes.pdf",
+    "status": "indexed",
+    "uploaded_at": "2026-10-02T17:52:08.751021+05:30",
+    "indexed": true,
+    "topic_map_ready": true,
+    "flashcards_ready": true,
+    "chunk_count": 9,
+    "topic_map": {
+      "topics": [
+        {
+          "title": "Definition and Overall Equation of Photosynthesis",
+          "summary": "Photosynthesis converts light energy into chemical energy, producing glucose and oxygen from carbon dioxide and water. The balanced equation is 6\u202fCO\u2082\u202f+\u202f6\u202fH\u2082O\u202f+\u202flight \u2192 C\u2086H\u2081\u2082O\u2086\u202f+\u202f6\u202fO\u2082.",
+          "section_ref": "1.1 Definition and Overall Equation"
+        },
+        {
+          "title": "Historical Milestones",
+          "summary": "Key discoveries include Ingenhousz\u2019s 1779 observation of light\u2011dependent oxygen release, van Niel\u2019s 1930s insight that water supplies the oxygen, and Calvin\u2019s 1950s\u201160s work tracing carbon fixation with \u00b9\u2074C, earning a Nobel Prize.",
+          "section_ref": "1.2 Historical Background"
+        },
+        {
+          "title": "Biological Importance of Photosynthesis",
+          "summary": "It is the primary source of organic carbon and atmospheric O\u2082, forming the base of food webs and generating the fossil fuels that power modern society.",
+          "section_ref": "1.3 Importance"
+        },
+        {
+          "title": "Chloroplast Structure",
+          "summary": "Chloroplasts contain thylakoids (site of light reactions), stacked grana, the surrounding stroma (site of the Calvin cycle), and are abundant in mesophyll cells.",
+          "section_ref": "2.1 The Chloroplast"
+        },
+        {
+          "title": "Photosynthetic Pigments",
+          "summary": "Chlorophyll\u202fa absorbs blue\u2011violet and red light, chlorophyll\u202fb broadens the spectrum, and carotenoids capture blue\u2011green light while protecting the photosystems from excess light.",
+          "section_ref": "2.2 Photosynthetic Pigments"
+        },
+        {
+          "title": "Photosystems I and II",
+          "summary": "Each photosystem comprises an antenna complex and a reaction centre (P680 for PSII, P700 for PSI) that harvest photons and initiate electron transfer.",
+          "section_ref": "2.3 Photosystems"
+        },
+        {
+          "title": "Light\u2011Dependent Reactions (Non\u2011Cyclic Electron Flow)",
+          "summary": "Water is split, electrons travel from PSII to PSI via the electron transport chain, generating a proton gradient that drives ATP synthesis and producing NADPH.",
+          "section_ref": "3.2 Non\u2011Cyclic Electron Flow (the Z\u2011scheme)"
+        },
+        {
+          "title": "Cyclic Electron Flow",
+          "summary": "Electrons from PSI cycle back to the cytochrome complex, yielding extra ATP without producing NADPH or O\u2082, helping balance the ATP/NADPH ratio needed for carbon fixation.",
+          "section_ref": "3.4 Cyclic Electron Flow"
+        },
+        {
+          "title": "The Calvin Cycle (Light\u2011Independent Reactions)",
+          "summary": "In the stroma, RuBisCO fixes CO\u2082 into 3\u2011PGA, which is reduced to G3P using ATP and NADPH, and then regenerated to RuBP; six turns produce one glucose molecule.",
+          "section_ref": "4.1 Overview"
+        },
+        {
+          "title": "Photorespiration and C\u2084/CAM Adaptations",
+          "summary": "When RuBisCO binds O\u2082, photorespiration wastes energy; C\u2084 plants spatially separate CO\u2082 fixation, while CAM plants temporally separate it, both reducing photorespiratory loss.",
+          "section_ref": "5.1 Photorespiration and C4/CAM Plants"
+        },
+        {
+          "title": "Limiting Factors of Photosynthetic Rate",
+          "summary": "Light intensity, CO\u2082 concentration, temperature, and water availability each can become the limiting factor, with enzyme\u2011controlled steps being temperature\u2011sensitive.",
+          "section_ref": "5.2 Limiting Factors"
+        },
+        {
+          "title": "Key Facts and Summary",
+          "summary": "Eight concise facts recap the overall equation, oxygen source, compartmentalization of reactions, photosystem wavelengths, chemiosmotic ATP synthesis, RuBisCO\u2019s abundance, energy requirements for glucose, and Calvin\u2019s Nobel\u2011winning work.",
+          "section_ref": "6.1 Eight Key Facts"
+        }
+      ]
+    },
+    "topic_map_at": "2026-10-02T17:52:16.047564+05:30"
+  },
+  "flashcards": [
+    {
+      "id": "aba4def6-d2bd-4fc4-8bea-cbf13837c5d8",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "Why is photosynthesis considered the primary source of organic carbon on Earth?",
+      "answer": "Because it converts inorganic CO\u2082 into organic carbohydrates that form the base of most food webs.",
+      "section_tag": "Biological Importance of Photosynthesis",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "547ce6eb-026b-4d92-a4b9-e6254b40cfcb",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "Name the four main structural components of a chloroplast and their primary functions.",
+      "answer": "Thylakoids (site of light\u2011dependent reactions), Grana (stacks of thylakoids), Stroma (site of the Calvin cycle), and Stomata (pores that regulate gas exchange).",
+      "section_tag": "Chloroplast Structure",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "b89b3063-8603-45aa-9413-b1ff14cf841f",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "What is the purpose of cyclic electron flow and how does it differ from non\u2011cyclic flow?",
+      "answer": "Cyclic electron flow recycles electrons from PSI back to the cytochrome complex, producing extra ATP without generating NADPH or O\u2082, helping balance the ATP/NADPH ratio needed for the Calvin cycle.",
+      "section_tag": "Cyclic Electron Flow",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "d7333bac-e85b-47b2-ac39-aa59e5ba305e",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "What is the overall balanced chemical equation for photosynthesis?",
+      "answer": "6 CO\u2082 + 6 H\u2082O + light energy \u2192 C\u2086H\u2081\u2082O\u2086 + 6 O\u2082",
+      "section_tag": "Definition and Overall Equation of Photosynthesis",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "47d56908-98c1-47dc-8d13-cbfefb6e2537",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "Why is the photosynthetic reaction considered endergonic?",
+      "answer": "Because it requires an input of energy (sunlight) to convert CO\u2082 and H\u2082O into glucose and O\u2082.",
+      "section_tag": "Definition and Overall Equation of Photosynthesis",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "d80056d7-4b43-4386-97da-07a9b1c510a5",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "Who first demonstrated that plants release oxygen only in the presence of light, and in what year?",
+      "answer": "Jan Ingenhousz in 1779.",
+      "section_tag": "Historical Milestones",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "bcc0824c-0e50-4003-b0b2-67bb83a2788d",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "Which scientist showed that the oxygen released during photosynthesis comes from water, not CO\u2082?",
+      "answer": "Cornelis van Niel in the 1930s (later confirmed with \u00b9\u2078O isotope labeling).",
+      "section_tag": "Historical Milestones",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "bb7e758f-2d92-4c40-853c-638fe7d6f3b4",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "What technique did Melvin Calvin and his colleagues use to map the carbon fixation pathway?",
+      "answer": "Radioactive \u00b9\u2074C tracing of carbon atoms.",
+      "section_tag": "Historical Milestones",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "e866f178-baab-4324-8419-dd80d73597dc",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "For what achievement did Melvin Calvin receive the Nobel Prize in Chemistry in 1961?",
+      "answer": "For mapping the carbon fixation pathway of photosynthesis using radioactive \u00b9\u2074C.",
+      "section_tag": "Key Facts and Summary",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "b4ed588b-000e-4ce0-92e4-51de564da967",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "State three of the eight key facts summarized in the study notes.",
+      "answer": "1) The overall equation is 6CO\u2082 + 6H\u2082O + light \u2192 C\u2086H\u2081\u2082O\u2086 + 6O\u2082. 2) Oxygen released comes from water, not CO\u2082. 3) Light\u2011dependent reactions occur in thylakoid membranes, while the Calvin cycle occurs in the stroma.",
+      "section_tag": "Key Facts and Summary",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "29da3e35-a664-4486-b07b-030ba7f216d1",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "Which enzyme is considered the most abundant protein on Earth?",
+      "answer": "RuBisCO.",
+      "section_tag": "Key Facts and Summary",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "0ce9c33d-19a8-4518-98d2-9d4ae5f20c4a",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "How is ATP generated during the light\u2011dependent reactions?",
+      "answer": "Proton pumping creates a gradient across the thylakoid membrane; protons flow back through ATP synthase, driving the phosphorylation of ADP to ATP (photophosphorylation).",
+      "section_tag": "Light\u2011Dependent Reactions (Non\u2011Cyclic Electron Flow)",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "f5dbcac1-fc3e-4dca-a960-dcb0a393d1fb",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "Outline the main steps of non\u2011cyclic (Z\u2011scheme) electron flow in the light\u2011dependent reactions.",
+      "answer": "1) Light excites PSII (P680) \u2192 electron ejection. 2) Water is split (photolysis) to replace electrons, releasing O\u2082, H\u207a, and e\u207b. 3) Electrons travel through plastoquinone, cytochrome b\u2086f, and plastocyanin, pumping H\u207a into the lumen. 4) Light excites PSI (P700); electrons pass to ferredoxin and then NADP\u207a reductase to form NADPH.",
+      "section_tag": "Light\u2011Dependent Reactions (Non\u2011Cyclic Electron Flow)",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "ac04f76c-ba84-41e1-a711-97596d2c0884",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "Why are enzyme\u2011controlled steps of photosynthesis particularly sensitive to temperature?",
+      "answer": "Because high temperatures can denature the enzymes, reducing their catalytic efficiency.",
+      "section_tag": "Limiting Factors of Photosynthetic Rate",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "7f95d069-7fca-4f3b-be68-b6a4fb1ee0a8",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "According to Blackman's principle of limiting factors, what determines the rate of photosynthesis?",
+      "answer": "The rate is limited by whichever factor (light intensity, CO\u2082 concentration, temperature, or water availability) is in shortest supply.",
+      "section_tag": "Limiting Factors of Photosynthetic Rate",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "2e9905f1-c83e-4569-86ad-5074a76a74b0",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "How do C\u2084 plants minimize photorespiration?",
+      "answer": "They first fix CO\u2082 into a four\u2011carbon compound in mesophyll cells using PEP carboxylase, then transport it to bundle\u2011sheath cells where CO\u2082 is released for the Calvin cycle, keeping CO\u2082 concentration high around RuBisCO.",
+      "section_tag": "Photorespiration and C4/CAM Adaptations",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "dbbf9550-5a18-4d94-98cf-db224afde7f6",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "Describe the CAM photosynthetic strategy.",
+      "answer": "CAM plants open stomata at night to fix CO\u2082 into organic acids, store them, and then release CO\u2082 for the Calvin cycle during the day while stomata are closed, reducing water loss.",
+      "section_tag": "Photorespiration and C4/CAM Adaptations",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "9fdd9e1a-b6ca-4bc8-9077-e90b9f9d1b41",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "What is photorespiration and under what conditions does it become more prevalent?",
+      "answer": "Photorespiration occurs when RuBisCO binds O\u2082 instead of CO\u2082, leading to a wasteful pathway; it is more common in hot, dry conditions when stomata close and O\u2082 concentration inside the leaf rises.",
+      "section_tag": "Photorespiration and C4/CAM Adaptations",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "09493d6b-cb4a-4329-bcd4-19e171424f7e",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "What role do carotenoids play in photosynthesis?",
+      "answer": "They absorb blue\u2011green light and protect the photosystems from photodamage caused by excess light.",
+      "section_tag": "Photosynthetic Pigments",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "fabeef14-c00d-4f40-b9fd-a77a7af3c8b5",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "Which pigment is the primary light\u2011absorbing molecule in photosynthesis and what wavelengths does it absorb best?",
+      "answer": "Chlorophyll a; it absorbs mainly blue\u2011violet (~430\u202fnm) and red (~662\u202fnm) light.",
+      "section_tag": "Photosynthetic Pigments",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "10d40a69-51d9-4810-901b-504b8fad3acf",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "What are the names of the reaction centres of Photosystem II and Photosystem I, and why are they named that way?",
+      "answer": "P680 for PSII and P700 for PSI; the numbers refer to the wavelength (in nm) at which each centre absorbs light most efficiently.",
+      "section_tag": "Photosystems I and II",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "8daf7f8e-5df3-48ad-9486-3c9a3320c00e",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "List the three phases of the Calvin cycle in order.",
+      "answer": "1) Carbon fixation, 2) Reduction, 3) Regeneration of RuBP.",
+      "section_tag": "The Calvin Cycle (Light\u2011Independent Reactions)",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "f460d938-491a-4660-a1df-265fc3ba9bf2",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "What enzyme catalyzes the first step of carbon fixation, and what substrate does it act on?",
+      "answer": "RuBisCO catalyzes the attachment of CO\u2082 to ribulose\u20111,5\u2011bisphosphate (RuBP).",
+      "section_tag": "The Calvin Cycle (Light\u2011Independent Reactions)",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "089e82fd-fee2-4573-8d7c-01b24a1a6a36",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "In which cellular compartment does the Calvin cycle occur?",
+      "answer": "In the stroma of the chloroplast.",
+      "section_tag": "The Calvin Cycle (Light\u2011Independent Reactions)",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    },
+    {
+      "id": "5222509b-38ca-4305-a5a3-f018a935cfa3",
+      "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+      "question": "How many ATP and NADPH molecules are required to produce one molecule of glucose?",
+      "answer": "18 ATP and 12 NADPH (six turns of the cycle, each turn using 3 ATP and 2 NADPH).",
+      "section_tag": "The Calvin Cycle (Light\u2011Independent Reactions)",
+      "next_review_at": "2026-10-02T17:52:21.126436+05:30"
+    }
+  ],
+  "progress": {
+    "document_id": "0ba62e16-1fb8-483a-81f5-db3db215cc54",
+    "sections": [
+      {
+        "section_tag": "Document",
+        "question_count": 1,
+        "review_count": 0,
+        "error_rate": null
+      },
+      {
+        "section_tag": "General",
+        "question_count": 1,
+        "review_count": 0,
+        "error_rate": null
+      }
+    ],
+    "total_questions": 2,
+    "total_reviews": 0
+  },
+  "weak_points": {
+    "weak_points": []
+  },
+  "chat_samples": [
+    {
+      "question": "ok, when do you think was the first time photsynthesis was done?",
+      "answer": "Not covered in this document.",
+      "coverage_label": "not_in_document",
+      "citations": []
+    },
+    {
+      "question": "can photosynthesis happen in deserts?",
+      "answer": "Yes. Photosynthesis can occur in desert environments, especially in plants that use the CAM (Crassulacean Acid Metabolism) pathway. CAM plants such as cacti open their stomata at night to take up CO\u2082 and store it, then run the Calvin cycle during the day, allowing them to photosynthesize while minimizing water loss in hot, dry conditions. The ability of photosynthesis to proceed depends on factors like water availability, which can be limiting in deserts, but CAM adaptations enable photosynthesis to still take place.",
+      "coverage_label": "partially_covered",
+      "citations": []
+    }
+  ]
+}

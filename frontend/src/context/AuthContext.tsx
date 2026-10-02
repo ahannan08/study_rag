@@ -1,6 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { authApi } from "@/api";
 import { setToken } from "@/api/client";
+import { isDemoMode } from "@/lib/demoMode";
 import type { User } from "@/types/api";
 
 interface AuthContextValue {
@@ -30,6 +31,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   useEffect(() => {
+    if (isDemoMode) {
+      setLoading(false);
+      return;
+    }
     void loadUser();
   }, [loadUser]);
 
