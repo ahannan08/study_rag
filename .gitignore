@@ -1,4 +1,27 @@
-# Dependencies
+# Virtual environments
+.venv/
+venv/
+backend/.venv/
+backend/venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets & local config
+.env
+backend/.env
+
+# Runtime data (uploads, FAISS indexes)
+data/
+backend/data/
+
+# Node / frontend
 node_modules/
 frontend/node_modules/
 dist/
@@ -7,3 +30,8 @@ frontend/dist/
 # Frontend env
 frontend/.env
 frontend/.env.local
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
