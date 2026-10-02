@@ -4,6 +4,7 @@ Monorepo layout:
 
 - [`study-rag-spec.pdf`](study-rag-spec.pdf) — product specification
 - [`backend/`](backend/) — FastAPI API, worker, Postgres, FAISS, Redis
+- [`frontend/`](frontend/) — React + TypeScript UI (Vite)
 
 ## Backend
 
@@ -17,6 +18,14 @@ uvicorn app.main:app --reload
 python -m app.worker.main
 ```
 
-API docs: http://localhost:8000/docs
+## Frontend
 
-See [backend/README.md](backend/README.md) for details.
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open http://localhost:5173 — API requests proxy to http://127.0.0.1:8000.
+
+See [backend/README.md](backend/README.md) and [frontend/README.md](frontend/README.md).
