@@ -2,6 +2,7 @@ import { ArrowRight, Github, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { PublicShell } from "@/components/layout/PublicShell";
 import { Button } from "@/components/ui/Button";
+import { isDemoMode } from "@/lib/demoMode";
 
 export function HomePage() {
   return (
@@ -32,6 +33,13 @@ export function HomePage() {
               <ArrowRight className="h-4 w-4" />
             </Button>
           </Link>
+          {!isDemoMode && (
+            <Link to="/login">
+              <Button variant="secondary" className="px-6 py-3 text-base">
+                Sign in (full app)
+              </Button>
+            </Link>
+          )}
           <a
             href="https://github.com"
             className="inline-flex items-center gap-2 text-sm font-medium text-ink-500 hover:text-ink-800"
@@ -43,8 +51,20 @@ export function HomePage() {
           </a>
         </div>
         <p className="mt-12 text-sm text-ink-500">
-          This live site uses exported sample documents only. Upload and live Q&amp;A require running the backend
-          locally — see GETTING_STARTED in the repo.
+          {isDemoMode ? (
+            <>
+              This live site uses exported sample documents only. Upload and live Q&amp;A require running the backend
+              locally — see GETTING_STARTED in the repo.
+            </>
+          ) : (
+            <>
+              Browse the demo without signing in. Run the backend locally and use{" "}
+              <Link to="/login" className="font-semibold text-accent hover:underline">
+                Sign in
+              </Link>{" "}
+              for upload and live chat.
+            </>
+          )}
         </p>
       </div>
     </PublicShell>
