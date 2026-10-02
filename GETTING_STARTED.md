@@ -155,15 +155,12 @@ sequenceDiagram
   FE->>API: POST /api/v1/documents
   API->>DB: document + job
   API-->>FE: 202 job_id
-  Note over API: BackgroundTasks index doc
+  Note over API: BackgroundTasks full pipeline
   API->>F: embed chunks + FAISS
+  API->>G: topic map + flashcards
+  API->>DB: topic_map + flashcards
   FE->>API: GET /api/v1/jobs/id poll
-  API-->>FE: completed indexed
-
-  U->>FE: Generate topic map
-  FE->>API: POST .../topic-map/generate
-  API->>G: topic JSON
-  API->>DB: topic_map
+  API-->>FE: completed indexed + topics + flashcards
 
   U->>FE: Chat question
   FE->>API: POST .../chat
@@ -180,12 +177,12 @@ sequenceDiagram
 
 1. **Register / sign in** — JWT stored in the browser; all `/api/v1/*` routes (except auth) require `Authorization: Bearer …`.
 
-2. **Library** — Upload a PDF or DOCX. Backend returns `document_id` and `job_id`. Poll job status until **indexed** (or check document status on refresh).
+2. **Library** — Upload a PDF or DOCX. Backend returns `document_id` and `job_id`. One job runs **index → topic map → flashcards**; poll job stages until completed (chat works once **indexed** even if a later LLM step fails).
 
 3. **Open document**
    - **Chat** — Ask questions; answers use retrieved chunks only, with citations and coverage labels (`fully_covered`, `partially_covered`, `not_in_document`).
-   - **Topics** — Click **Generate**; poll job; view topic map.
-   - **Flashcards** — Click **Generate**; poll job; browse cards.
+   - **Topics** — Book-style **table of contents** (numbered sections); appears automatically after processing.
+   - **Flashcards** — Grouped by section with four cards shown per group; expand for the rest.
    - **Progress** — Section stats and weak points (optional Grok wording).
 
 4. **Review** (nav) — Due flashcards across all documents; **Again** / **Got it** updates spaced repetition.

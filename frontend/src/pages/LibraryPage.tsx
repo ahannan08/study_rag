@@ -5,6 +5,7 @@ import { UploadDropzone } from "@/components/documents/UploadDropzone";
 import { AppShell } from "@/components/layout/AppShell";
 import { Card } from "@/components/ui/Card";
 import { useJobPoll } from "@/hooks/useJobPoll";
+import { jobStageLabel } from "@/lib/jobStageLabels";
 import type { Document } from "@/types/api";
 
 export function LibraryPage() {
@@ -56,9 +57,10 @@ export function LibraryPage() {
       <div className="grid gap-8 lg:grid-cols-5">
         <div className="lg:col-span-2">
           <UploadDropzone onFile={(f) => void onUpload(f)} disabled={uploading} />
-          {uploadJob && (
+          {uploadJob && uploadJob.status !== "completed" && (
             <p className="mt-3 text-sm text-ink-500">
-              Indexing: {uploadJob.status} {uploadJob.stage ? `· ${uploadJob.stage}` : ""}
+              {jobStageLabel(uploadJob.stage, uploadJob.status)}
+              {uploadJob.status === "failed" && uploadJob.error ? `: ${uploadJob.error}` : ""}
             </p>
           )}
           {error && <p className="mt-2 text-sm text-red-600">{error}</p>}

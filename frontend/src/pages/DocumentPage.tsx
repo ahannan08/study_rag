@@ -1,14 +1,13 @@
 import { ArrowLeft } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { documentsApi, flashcardsApi, progressApi, topicMapApi } from "@/api";
+import { documentsApi, flashcardsApi, progressApi } from "@/api";
 import { ChatPanel } from "@/components/chat/ChatPanel";
 import { FlashcardsPanel } from "@/components/flashcards/FlashcardsPanel";
 import { AppShell } from "@/components/layout/AppShell";
 import { ProgressPanel } from "@/components/progress/ProgressPanel";
 import { TopicMapPanel } from "@/components/topic-map/TopicMapPanel";
 import { Badge } from "@/components/ui/Badge";
-import { useJobPoll } from "@/hooks/useJobPoll";
 import type { Document, Flashcard, ProgressResponse, WeakPointsResponse } from "@/types/api";
 import { cn } from "@/lib/cn";
 
@@ -22,10 +21,6 @@ export function DocumentPage() {
   const [cards, setCards] = useState<Flashcard[]>([]);
   const [progress, setProgress] = useState<ProgressResponse | null>(null);
   const [weak, setWeak] = useState<WeakPointsResponse | null>(null);
-  const [topicJobId, setTopicJobId] = useState<string | null>(null);
-  const [flashJobId, setFlashJobId] = useState<string | null>(null);
-  const [genTopic, setGenTopic] = useState(false);
-  const [genFlash, setGenFlash] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const refreshDoc = useCallback(async () => {
@@ -33,6 +28,7 @@ export function DocumentPage() {
     const d = await documentsApi.get(documentId);
     setDoc(d);
     setTopicMap(d.topic_map ?? null);
+    return d;
   }, [documentId]);
 
   const refreshFlash = useCallback(async () => {
@@ -55,35 +51,18 @@ export function DocumentPage() {
     if (tab === "progress") void refreshProgress();
   }, [tab, refreshProgress]);
 
-  const onTopicComplete = useCallback(() => {
-    setTopicJobId(null);
-    setGenTopic(false);
-    void refreshDoc();
-  }, [refreshDoc]);
+  const pipelinePending =
+    !!doc?.indexed && (!doc.topic_map_ready || !doc.flashcards_ready);
 
-  const onFlashComplete = useCallback(() => {
-    setFlashJobId(null);
-    setGenFlash(false);
-    void refreshFlash();
-    void refreshDoc();
-  }, [refreshDoc, refreshFlash]);
-
-  const { job: topicJob } = useJobPoll(topicJobId, onTopicComplete);
-  const { job: flashJob } = useJobPoll(flashJobId, onFlashComplete);
-
-  const generateTopic = async () => {
-    if (!documentId) return;
-    setGenTopic(true);
-    const { job_id } = await topicMapApi.generate(documentId);
-    setTopicJobId(job_id);
-  };
-
-  const generateFlash = async () => {
-    if (!documentId) return;
-    setGenFlash(true);
-    const { job_id } = await flashcardsApi.generate(documentId);
-    setFlashJobId(job_id);
-  };
+  useEffect(() => {
+    if (!documentId || !pipelinePending) return;
+    const id = window.setInterval(() => {
+      void refreshDoc().then((d) => {
+        if (d?.flashcards_ready) void refreshFlash();
+      });
+    }, 3000);
+    return () => window.clearInterval(id);
+  }, [documentId, pipelinePending, refreshDoc, refreshFlash]);
 
   if (!documentId || error) {
     return (
@@ -103,6 +82,9 @@ export function DocumentPage() {
     { id: "progress", label: "Progress" },
   ];
 
+  const topicsPreparing = !!doc?.indexed && !doc.topic_map_ready;
+  const flashPreparing = !!doc?.indexed && !doc.flashcards_ready;
+
   return (
     <AppShell>
       <Link to="/" className="mb-4 inline-flex items-center gap-2 text-sm font-medium text-ink-500 hover:text-ink-800">
@@ -115,6 +97,8 @@ export function DocumentPage() {
           <div className="mt-2 flex flex-wrap gap-2">
             {doc && <Badge label={doc.status} />}
             {doc?.indexed && <Badge label="indexed" />}
+            {doc?.topic_map_ready && <Badge label="topics" />}
+            {doc?.flashcards_ready && <Badge label="flashcards" />}
           </div>
         </div>
       </div>
@@ -137,18 +121,14 @@ export function DocumentPage() {
       {tab === "topics" && (
         <TopicMapPanel
           topicMap={topicMap}
-          job={topicJob}
-          onGenerate={() => void generateTopic()}
-          loading={genTopic}
+          preparing={topicsPreparing}
           indexed={!!doc?.indexed}
         />
       )}
       {tab === "flashcards" && (
         <FlashcardsPanel
           cards={cards}
-          job={flashJob}
-          onGenerate={() => void generateFlash()}
-          loading={genFlash}
+          preparing={flashPreparing}
           indexed={!!doc?.indexed}
         />
       )}

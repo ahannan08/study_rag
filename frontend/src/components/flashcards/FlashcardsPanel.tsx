@@ -1,46 +1,49 @@
 import { Layers } from "lucide-react";
-import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
-import type { Flashcard, Job } from "@/types/api";
-import { Badge } from "@/components/ui/Badge";
+import type { Flashcard } from "@/types/api";
+import { FlashcardGroup } from "@/components/flashcards/FlashcardGroup";
 
 interface FlashcardsPanelProps {
   cards: Flashcard[];
-  job: Job | null;
-  onGenerate: () => void;
-  loading: boolean;
+  preparing: boolean;
   indexed: boolean;
 }
 
-export function FlashcardsPanel({ cards, job, onGenerate, loading, indexed }: FlashcardsPanelProps) {
+function groupCards(cards: Flashcard[]): Map<string, Flashcard[]> {
+  const map = new Map<string, Flashcard[]>();
+  for (const c of cards) {
+    const tag = c.section_tag?.trim() || "General";
+    const list = map.get(tag) ?? [];
+    list.push(c);
+    map.set(tag, list);
+  }
+  return new Map([...map.entries()].sort(([a], [b]) => a.localeCompare(b)));
+}
+
+export function FlashcardsPanel({ cards, preparing, indexed }: FlashcardsPanelProps) {
+  const groups = groupCards(cards);
+
   return (
     <Card>
-      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-        <div className="flex items-center gap-2">
-          <Layers className="h-5 w-5 text-accent" />
-          <h2 className="font-display text-xl font-bold text-ink-950">Flashcards</h2>
-        </div>
-        <Button variant="secondary" onClick={onGenerate} loading={loading} disabled={!indexed}>
-          Generate
-        </Button>
+      <div className="mb-4 flex items-center gap-2">
+        <Layers className="h-5 w-5 text-accent" />
+        <h2 className="font-display text-xl font-bold text-ink-950">Flashcards</h2>
       </div>
-      {job && job.status !== "completed" && (
-        <p className="mb-3 text-sm text-ink-500">
-          Job: {job.status} {job.stage ? `· ${job.stage}` : ""}
-        </p>
+      {!indexed && (
+        <p className="text-sm text-ink-500">Available after the document is indexed.</p>
       )}
-      {cards.length === 0 ? (
-        <p className="text-sm text-ink-500">Generate cards from document content, then review them in the Review tab.</p>
-      ) : (
-        <ul className="grid gap-3 sm:grid-cols-2">
-          {cards.map((c) => (
-            <li key={c.id} className="rounded-xl border border-ink-100 p-4">
-              <Badge label={c.section_tag || "general"} className="mb-2" />
-              <p className="font-medium text-ink-900">{c.question}</p>
-              <p className="mt-2 text-sm text-ink-600">{c.answer}</p>
-            </li>
+      {indexed && preparing && cards.length === 0 && (
+        <p className="text-sm text-ink-500">Generating flashcards by topic…</p>
+      )}
+      {indexed && !preparing && cards.length === 0 && (
+        <p className="text-sm text-ink-500">Flashcards will appear here after processing.</p>
+      )}
+      {cards.length > 0 && (
+        <div className="space-y-4">
+          {[...groups.entries()].map(([tag, sectionCards]) => (
+            <FlashcardGroup key={tag} sectionTag={tag} cards={sectionCards} previewCount={4} />
           ))}
-        </ul>
+        </div>
       )}
     </Card>
   );
